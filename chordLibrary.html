@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strumify</title>
+    <link rel="stylesheet" href="chordLibrary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <img src="picturess/logo.png" alt="Strumify Logo" class="logo">        
+            <div class="main-nav-wrapper">
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="chordLibrary.html">Chord Library</a>
+                    <a href="tutorial.html ">Tutorial</a>
+                </nav>
+                <div class="icon-links">
+                    <a href="#"><i class="fa fa-user"></i></a>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+    <!-- HERO -->
+        <section class="library-hero">
+            <span class="ref-tag">— REFERENCE GUIDE</span>
+
+            <h1>CHORD <span class="highlight">LIBRARY</span></h1>
+
+            <p>Learn guitar chords with diagrams, finger placements, and song examples.</p>
+        </section>
+
+    <!-- FILTERS -->
+        <div class="chord-filters">
+
+            <button class="filter-link active">All</button>
+            <button class="filter-link">Major</button>
+            <button class="filter-link">Minor</button>
+            <button class="filter-link">7th</button>
+            <button class="filter-link">Other</button>
+
+        </div>
+
+    <!-- CHORD GRID -->
+        <section class="chord-grid">
+
+            <!-- G -->
+            <div class="chord-card" data-type="major"
+            onclick="openChordModal('G MAJOR','picturess/g-major.png','320003',['Leaving on a Jet Plane','Knockin on Heavens Door','Country Roads'])">
+
+                <div class="card-top">
+                    <span class="difficulty easy">BEGINNERS</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/g-major.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>G</h2>
+                    <p>G Major</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        <!-- C -->
+            <div class="chord-card" data-type="major"
+            onclick="openChordModal('C MAJOR','picturess/c-major.png','032010',['Perfect','Stand By Me','Let It Be'])">
+
+                <div class="card-top">
+                    <span class="difficulty easy">BEGINNERS</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/c-major.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>C</h2>
+                    <p>C Major</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        <!-- D -->
+            <div class="chord-card" data-type="major"
+            onclick="openChordModal('D MAJOR','picturess/d-major.png','xx0232',['Wonderwall','Free Fallin','Sweet Home Alabama'])">
+
+                <div class="card-top">
+                    <span class="difficulty easy">BEGINNERS</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/d-major.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>D</h2>
+                    <p>D Major</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        <!-- E -->
+            <div class="chord-card" data-type="major"
+            onclick="openChordModal('E MAJOR','picturess/e-major.png','022100',['Brown Eyed Girl','Three Little Birds','Ring of Fire'])">
+
+                <div class="card-top">
+                    <span class="difficulty easy">BEGINNERS</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/e-major.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>E</h2>
+                    <p>E Major</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        <!-- A -->
+            <div class="chord-card" data-type="major"
+            onclick="openChordModal('A MAJOR','picturess/a-major.png','x02220',['Sweet Caroline','Take Me Home','Horse With No Name'])">
+
+                <div class="card-top">
+                    <span class="difficulty easy">BEGINNERS</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/a-major.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>A</h2>
+                    <p>A Major</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="major"
+            onclick="openChordModal('F MAJOR','picturess/f-major.png','133211',['Perfect','Creep','Let Her Go'])">
+
+                <div class="card-top">
+                    <span class="difficulty easy">BEGINNERS</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/f-major.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>F</h2>
+                    <p>F Major</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        <!-- EM -->
+            <div class="chord-card" data-type="minor"
+            onclick="openChordModal('E MINOR','picturess/e-minor.png','022000',['Zombie','Boulevard of Broken Dreams','Nothing Else Matters'])">
+
+                <div class="card-top">
+                    <span class="difficulty medium">EASY</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/e-minor.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>Em</h2>
+                    <p>E Minor</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        <!-- AM -->
+            <div class="chord-card" data-type="minor"
+            onclick="openChordModal('A MINOR','picturess/a-minor.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty medium">EASY</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/a-minor.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>Am</h2>
+                    <p>A Minor</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="minor"
+            onclick="openChordModal('A MINOR','picturess/d-minor.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty medium">EASY</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/d-minor.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>Dm</h2>
+                    <p>D Minor</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/c7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty hard">BEGINNING</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/c7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>C 7th</h2>
+                    <p>C7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/d7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty hard">BEGINNING</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/d7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>D 7th</h2>
+                    <p>D7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/e7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty hard">BEGINNING</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/e7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>E 7th</h2>
+                    <p>E7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/g7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty hard">BEGINNING</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/g7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>G 7th</h2>
+                    <p>G7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/a7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty hard">BEGINNING</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/a7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>A 7th</h2>
+                    <p>A7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/dm7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty hardest">MORE OPEN 7th</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/dm7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>Dm 7th</h2>
+                    <p>Dm7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/em7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty medium">MORE OPEN 7th</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/em7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>Em 7th</h2>
+                    <p>Em7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/fmaj7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty medium">MORE OPEN 7th</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/fmaj7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>Fmaj 7th</h2>
+                    <p>Fmaj7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/am7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty medium">MORE OPEN 7th</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/am7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>Am 7th</h2>
+                    <p>Am7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="chord-card" data-type="7th"
+            onclick="openChordModal('A MINOR','picturess/b7.png','x02210',['Riptide','Someone Like You','Hallelujah'])">
+
+                <div class="card-top">
+                    <span class="difficulty medium">MORE OPEN 7th</span>
+                    <i class="fa-solid fa-guitar"></i>
+                </div>
+
+                <div class="chord-diagram-preview">
+                    <img src="picturess/b7.png">
+                </div>
+
+                <div class="chord-info">
+                    <h2>B 7th</h2>
+                    <p>B7</p>
+                </div>
+
+                <button class="learn-more">Learn Chord <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+           
+            
+
+        </section>
+
+    </main>
+
+<!-- MODAL -->
+    <div id="chordModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close-modal" onclick="closeChordModal()">&times;</span>
+
+            <h2 id="modalTitle">G MAJOR</h2>
+
+            <div class="modal-body">
+
+                <div class="diagram-large">
+                    <img id="modalImage">
+                    <p id="modalCode"></p>
+                </div>
+
+                <div class="chord-details">
+                    <ul id="songList"></ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="footer-content">
+            <h2>Strumify</h2>
+            <p>Premium guitars for every musician.</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="chordLibrary.js"></script>
+
+</body>
+</html>

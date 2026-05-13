@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strumify</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <img src="picturess/logo.png" alt="Strumify Logo" class="logo">        
+            <div class="main-nav-wrapper">
+                <nav class="main-nav">
+                    <a href="about.html">About</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="chordLibrary.html">Chord Library</a>
+                    <a href="tutorial.html">Tutorial</a>
+                </nav>
+
+                <div class="icon-links">
+                    <a href="#"><i class="fa fa-user"></i></a>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-image">
+            <img src="picturess/bg.jpg" alt="background" class="background">
+            <div class="hero-text">
+                <h1>Strumify</h1>
+                <p>Built for True Strummers.</p>
+                <div class="hero-btn">
+                    <a href="shop.html" class="shop-btn">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+    
+
+    <!-- About the Shop Section -->
+    <section class="shop-story-section">
+        <div class="container story-wrapper">
+            <div class="story-image">
+                <img src="picturess/bg.jpg" alt="Strumify Workshop">
+            </div>
+            <div class="story-text">
+                <span class="since-tag">ESTABLISHED 2026</span>
+                <h2>OUR LEGACY</h2>
+                <p>
+                    Ang Strumify ay nagsimula sa isang simple pero madilim na workshop na puno ng amoy ng 
+                    fresh mahogany at ang ugong ng tube amplifiers. Hindi lang kami basta nagbebenta 
+                    ng gitara; layunin naming mag-curate ng mga instrumento na magsisilbing extension 
+                    ng iyong kaluluwa.
+                </p>
+                <p>
+                    Bawat gitara sa aming racks ay hand-selected. Naniniwala kami na mas magandang 
+                    lugar ang mundo kapag ito ay mas maingay at mas melodic.
+                </p>
+                <a href="about.html" class="btn btn-outline-dark">Read Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    </main>
+
+
+
+        <!-- AUTH MODAL -->
+    <div class="modal" id="loginModal">
+
+        <div class="modal-box">
+
+            <span class="close" id="closeModal">&times;</span>
+
+            <!-- TABS -->
+            <div class="tabs">
+                <button class="tab active" id="loginTabBtn">LOG IN</button>
+                <button class="tab" id="signupTabBtn">SIGN UP</button>
+            </div>
+
+            <!-- LOGIN -->
+            <div class="form active" id="loginForm">
+                <h2>WELCOME BACK</h2>
+
+                <input type="email" id="loginEmail" placeholder="Email">
+                <input type="password" id="loginPassword" placeholder="Password">
+
+                <button class="main-btn" id="loginBtn">LOG IN</button>
+
+                <p>No account yet? <span id="switchToSignup">Sign Up</span></p>
+            </div>
+
+            <!-- SIGN UP -->
+            <div class="form" id="signupForm">
+                <h2>CREATE ACCOUNT</h2>
+
+                <input type="text" id="signupName" placeholder="Full Name">
+                <input type="email" id="signupEmail" placeholder="Email">
+                <input type="password" id="signupPassword" placeholder="Password">
+
+                <button class="main-btn" id="signupBtn">SIGN UP</button>
+
+                <p>Already have an account? <span id="switchToLogin">Log In</span></p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+     <footer>
+        <div class="footer-content">
+            <h2>Strumify</h2>
+            <p>Premium guitars for every musician.</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+
+</body>
+</html>
+
+

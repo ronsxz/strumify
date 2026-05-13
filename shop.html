@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strumify</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <img src="picturess/logo.png" alt="Strumify Logo" class="logo">        
+            <div class="main-nav-wrapper">
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="chordLibrary.html">Chord Library</a>
+                    <a href="tutorial.html">Tutorial</a>
+                </nav>
+                <div class="icon-links">
+                    <a href="#"><i class="fa fa-user"></i></a>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="shop-hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span>PREMIUM COLLECTION</span>
+
+            <h1>
+                Find Your Perfect Guitar
+            </h1>
+
+            <p>
+                Discover premium acoustic, electric, and bass guitars
+                crafted for beginners and professional musicians.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SHOP -->
+    <main class="container">
+
+        <!-- TOP -->
+        <section class="shop-top">
+
+            <div class="top-left">
+                <h2>Featured Products</h2>
+                <p>Modern instruments built for every musician.</p>
+            </div>
+
+            <div class="shop-controls">
+
+                <div class="search-wrapper">
+                    <i class="fa fa-search"></i>
+
+                    <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search guitars..."
+                    class="search-box">
+                </div>
+
+                <select id="sortSelect" class="sort-box">
+                    <option value="default">Sort Products</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+
+            </div>
+
+        </section>
+
+        <!-- FILTER -->
+        <div class="filter-buttons">
+            <button class="active">All</button>
+            <button>Acoustic</button>
+            <button>Electric</button>
+            <button>Bass</button>
+        </div>
+
+        <!-- PRODUCTS -->
+        <section class="product-grid" id="products">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/acoustic.jpg" alt="Acoustic Guitar">
+
+                    <span class="tag new">
+                        New
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Acoustic
+                    </span>
+
+                    <h3>Mahogany Series</h3>
+
+                    <p class="price">
+                        ₱12,500
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/eg-classic.webp" alt="Electric Guitar">
+
+                    <span class="tag sale">
+                        Sale
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Electric
+                    </span>
+
+                    <h3>Classic Electric</h3>
+
+                    <p class="price">
+                        ₱18,200
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/a-vintage.jpg" alt="Vintage Guitar">
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Acoustic
+                    </span>
+
+                    <h3>Vintage Sunburst</h3>
+
+                    <p class="price">
+                        ₱15,000
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/b-thunder.jpg" alt="Bass Guitar">
+
+                    <span class="tag new">
+                        Hot
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Bass
+                    </span>
+
+                    <h3>Thunder Bass</h3>
+
+                    <p class="price">
+                        ₱22,000
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 5 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/e-1.webp" alt="Electric Guitar">
+
+                    <span class="tag sale">
+                        -15%
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Electric
+                    </span>
+
+                    <h4>Epiphone Back to the Future ES-345 Semi-Hollow Electric Guitar - Cherry Red </h4>
+
+                    <p class="price">
+                        ₱75,600
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 6 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/a1.webp" alt="Acoustic Guitar">
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Acoustic
+                    </span>
+
+                    <h4>Bromo BAT8ME Solid Top Acoustic Guitar (Black)</h4>
+
+                    <p class="price">
+                        ₱11,340
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 7 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/a2.webp" alt="Bass Guitar">
+
+                    <span class="tag new">
+                        Best
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Bass
+                    </span>
+
+                    <h3>Epiphone Limited Edition Hummingbird Studio Acoustic-electric Guitar - Transparent Ebony</h3>
+
+                    <p class="price">
+                        ₱26,095
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 8 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/a3.webp" alt="Electric Guitar">
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Electric
+                    </span>
+
+                    <h4>Epiphone J-45 EC Studio Acoustic-electric Guitar – Natural</h4>
+
+                    <p class="price">
+                        ₱23,800
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/e-2.webp" alt="Electric Guitar">
+
+                    <span class="tag sale">
+                        -15%
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Electric
+                    </span>
+
+                    <h4>Gibson SG Standard Electric Guitar – Ebony</h4>
+
+                    <p class="price">
+                        ₱117,090
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/e-3.webp" alt="Electric Guitar">
+
+                    <span class="tag sale">
+                        -15%
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Electric
+                    </span>
+
+                    <h4>Squier FSR Sonic Mustang Electric Guitar w/White Pickguard / Maple FB / Shell Pink</h4>
+
+                    <p class="price">
+                        ₱19,500
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/e-4.webp" alt="Electric Guitar">
+
+                    <span class="tag sale">
+                        -15%
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Electric
+                    </span>
+
+                    <h4>Squier FSR Sonic Stratocaster - Maple Fingerboard / Black Pickguard / White Plastic Parts - Black</h4>
+
+                    <p class="price">
+                        ₱15,480
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/e-5.webp" alt="Electric Guitar">
+
+                    <span class="tag sale">
+                        -15%
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Electric
+                    </span>
+
+                    <h4>Jackson JS Series Dinky JS20 DKQ 2PT Electric Guitar Amaranth - Transparent Green Burst</h4>
+
+                    <p class="price">
+                        ₱23,290
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="picturess/e-6.webp" alt="Electric Guitar">
+
+                    <span class="tag sale">
+                        -15%
+                    </span>
+
+                    <div class="product-icons">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="view-btn"><i class="fa fa-eye"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Electric
+                    </span>
+
+                    <h4>Fender x Hello Kitty Stratocaster Limited Edition Electric Guitar</h4>
+
+                    <p class="price">
+                        ₱35,640
+                    </p>
+
+                    <button class="add-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+           
+
+        </section>
+
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal" id="productModal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <img id="modalImg">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalPrice"></p>
+
+            <button id="modalAddCart">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>Strumify</h2>
+
+            <p>
+                Premium guitars for every musician.
+            </p>
+
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="shop.js"></script>
+
+</body>
+</html>
